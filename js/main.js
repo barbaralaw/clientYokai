@@ -5,7 +5,7 @@ async function getYokaiInfo() {
   const yokaiName = document.querySelector('input').value
   try {
     // need to remember await key word for response and data
-    const response = await fetch(`https://yokai-api.herokuapp.com/${yokaiName}`) // need http or https for cors
+    const response = await fetch(`https://yokai-api.herokuapp.com/yokai/${yokaiName}`) // need http or https for cors
     const data = await response.json()
 
     console.log(data)
