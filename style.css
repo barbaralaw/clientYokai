@@ -27,13 +27,15 @@ html {
   max-width: 150px;
   height: auto;
 } */
-.imgThumb {
+.imgThumbYokai,
+.imgThumbMedal {
   cursor: pointer;
   transition: 0.3s;
   width: 150px;
   height: auto;
 }
-.modal {
+.modalYokai,
+.modalMedal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -46,11 +48,12 @@ html {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.9);
 }
-.modalImage {
+.modalImageYokai,
+.modalImageMedal {
   margin: auto;
   display: block;
   width: 50%;
-  height: 60%;
+  height: auto;
   max-width: 700px;
 }
 #yokaiCaption,
@@ -64,7 +67,8 @@ html {
    padding: 10px 0;
    height: 150px;
 }
-.close {
+.closeYokai,
+.closeMedal {
   position: absolute;
    top: 15px;
    right: 35px;
@@ -73,8 +77,10 @@ html {
    font-weight: bold;
    transition: 0.3s;
 }
-.close:hover,
-.close:focus {
+.closeYokai:hover,
+.closeYokai:focus,
+.closeMedal:hover,
+.closeMedal:focus {
    color: rgb(255, 0, 0);
    cursor: pointer;
 }

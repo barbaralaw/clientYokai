@@ -23,15 +23,24 @@ async function getYokaiInfo() {
     document.querySelector('input').innerText = ''
     document.querySelector('input').placeholder = 'Enter another Yokai name'
 
-    const modalEle = document.querySelector(".modal");
-    const modalImage = document.querySelector(".modalImage");
+    const modalEleYokai = document.querySelector(".modalYokai");
+    const modalEleMedal = document.querySelector(".modalMedal");
+    const modalImageYokai = document.querySelector(".modalImageYokai");
+    const modalImageMedal = document.querySelector(".modalImageMedal");
     let wow;
-    document.querySelector('.ImgThumbnail').addEventListener('click',(event)=>{
-      modalEle.style.display = "block";
-      modalImage.src = event.target.src;
+    document.querySelector('.imgThumbYokai').addEventListener('click',(event)=>{
+      modalEleYokai.style.display = "block";
+      modalImageYokai.src = data.yokaiPic;
     })
-    document.querySelector(".close").addEventListener('click',()=>{
-      modalEle.style.display = "none";
+    document.querySelector('.imgThumbMedal').addEventListener('click',(event)=>{
+      modalEleMedal.style.display = "block";
+      modalImageMedal.src = data.medalPic;
+    })
+    document.querySelector(".closeYokai").addEventListener('click',()=>{
+      modalEleYokai.style.display = "none";
+    })
+    document.querySelector(".closeMedal").addEventListener('click',()=>{
+      modalEleMedal.style.display = "none";
     })
 
   } catch(err) {
