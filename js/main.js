@@ -11,12 +11,12 @@ async function getYokaiInfo() {
     console.log(data)
     document.querySelector('.directions').style.display = 'none';
     document.querySelector('.results').style.display = 'block';
-    document.getElementById('yokaiPicThumb').src = data.yokaiPicThumb
-    document.getElementById('yokaiPicThumb').alt = `${data.name} thumbnail picture`
+    document.getElementById('yokaiPic').src = data.yokaiPic
+    document.getElementById('yokaiPic').alt = `${data.name} picture`
     document.getElementById('yokaiPic').href = data.yokaiPic
     document.querySelector('h2').innerText = data.name
-    document.getElementById('medalPicThumb').src = data.medalPicThumb
-    document.getElementById('medalPicThumb').alt = `${data.name} medal`
+    document.getElementById('medalPic').src = data.medalPic
+    document.getElementById('medalPic').alt = `${data.name} medal`
     document.getElementById('medalPic').href = data.medalPic
     document.getElementById('tribe').innerText = 'Tribe:   ' + data.tribe
     document.querySelector('#bio').innerText = data.medalliumBio
