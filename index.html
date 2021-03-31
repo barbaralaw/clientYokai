@@ -2,17 +2,37 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Yo-kai Watch - Yo-kai Info Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1>Get Yokai Info</h1>
-    <a id="yokaiPic" href="#"><img id="yokaiPicThumb" src="#" alt=""></a>
-    <h2></h2>
-    <a id="medalPic" href="#"><img id="medalPicThumb" src="" alt=""></a>
-    <h3 id="tribe"></h3>
-    <p></p>
-    <input type="text" name="" value="">
-    <button type="button" name="button">Click Me</button>
+    <div class="wrapper">
+      <div class="directions">
+        <p>Please enter a Yokai's name in the input box.</p>
+      </div>
+
+      <div class="results">
+        <a id="yokaiPic" href="#"><img id="yokaiPic" src="#" alt=""></a>
+        <h2></h2>
+        <p id="bio"></p>
+        <a id="medalPic" href="#"><img id="medalPic" src="" alt=""></a>
+        <h3 id="tribe"></h3>
+      </div>
+
+      <input type="text" name="" placeholder="Enter Yokai name">
+      <button type="button" name="button">Click Me</button>
+
+      <div class="push"></div>
+    </div>
+
+
+    <div class="moreInfo">
+      <p>A fullstack webapp by <a href="www.barbaralaw.me">Barbara.</a></p>
+      <p>I do not claim ownership of any of the images or information, I'm just a huge fan (#rockabelly4lyfe). Medallium bio information is courtesy of the <a href="https://yokaiwatch.fandom.com/wiki/Main_Page"Yo-Kai watch Fandom.com</a> community.</p>
+    </div>
 
     <script src="js/main.js" type="text/javascript"></script>
   </body>
