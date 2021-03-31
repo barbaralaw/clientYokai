@@ -23,6 +23,17 @@ async function getYokaiInfo() {
     document.querySelector('input').innerText = ''
     document.querySelector('input').placeholder = 'Enter another Yokai name'
 
+    const modalEle = document.querySelector(".modal");
+    const modalImage = document.querySelector(".modalImage");
+    let wow;
+    document.querySelector('.ImgThumbnail').addEventListener('click',(event)=>{
+      modalEle.style.display = "block";
+      modalImage.src = event.target.src;
+    })
+    document.querySelector(".close").addEventListener('click',()=>{
+      modalEle.style.display = "none";
+    })
+
   } catch(err) {
     console.log(err)
   }
