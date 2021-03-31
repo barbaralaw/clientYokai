@@ -23,6 +23,10 @@ html {
   bottom: 2rem;
   left: 5%;
 }
+img {
+  max-width: 150px;
+  height: auto;
+}
 .moreInfo p {
   font-size: .8rem;
 }
